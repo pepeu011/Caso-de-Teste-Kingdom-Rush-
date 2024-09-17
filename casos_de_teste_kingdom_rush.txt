@@ -1,0 +1,129 @@
+Nome do Projeto: Kingdom Rush
+
+Plano de Teste: Funcionalidade de Construção de Torres
+Objetivo: Verificar o funcionamento correto da construção de torres em locais válidos e inválidos, e com recursos suficientes e insuficientes.
+
+Suite de Teste: Construção de Torres
+
+Caso de Teste 1: Construção de Torre em Local Válido
+Resumo: Verificar se o jogador pode construir uma torre em um local válido no mapa.
+Prioridade: Alta
+Status: A ser Executado
+Executor: [Nome do Testador]
+Data de Criação: 2024-09-17
+Pré-condição:
+- O jogador deve estar na fase de jogo com recursos suficientes.
+- Deve haver um local válido disponível para construção.
+Passos:
+1. Inicie o jogo e entre na fase de jogo.
+2. Identifique um local válido para construção de torre.
+3. Selecione o tipo de torre desejada.
+4. Clique no local válido para construir a torre.
+Resultado Esperado: A torre é construída no local selecionado e aparece no mapa.
+Observações: Verifique se o local selecionado é um local de construção permitido e livre de obstáculos.
+Comentários: A interface de construção deve ser intuitiva e a construção visível.
+
+Caso de Teste 2: Construção de Torre em Local Inválido
+Resumo: Verificar se o jogo impede a construção de uma torre em locais inválidos.
+Prioridade: Alta
+Status: A ser Executado
+Executor: [Nome do Testador]
+Data de Criação: 2024-09-17
+Pré-condição:
+- O jogador deve estar na fase de jogo com recursos suficientes.
+- Deve haver um local inválido disponível para teste (fora do caminho, sobre um obstáculo, etc.).
+Passos:
+1. Inicie o jogo e entre na fase de jogo.
+2. Identifique um local inválido para construção de torre.
+3. Selecione o tipo de torre desejada.
+4. Tente clicar no local inválido para construir a torre.
+Resultado Esperado: O jogo deve mostrar uma mensagem de erro ou impedir a construção da torre, indicando que o local é inválido.
+Observações: Verifique a clareza da mensagem de erro exibida.
+Comentários: Teste diferentes tipos de locais inválidos para garantir a consistência da mensagem.
+
+Caso de Teste 3: Construção de Torre com Recursos Insuficientes
+Resumo: Verificar se o jogo impede a construção de uma torre quando os recursos são insuficientes.
+Prioridade: Alta
+Status: A ser Executado
+Executor: [Nome do Testador]
+Data de Criação: 2024-09-17
+Pré-condição:
+- O jogador deve estar na fase de jogo com recursos insuficientes para a torre selecionada.
+Passos:
+1. Inicie o jogo e entre na fase de jogo.
+2. Verifique a quantidade atual de recursos disponíveis.
+3. Escolha um tipo de torre que requer mais recursos do que você tem.
+4. Tente construir a torre em um local válido.
+Resultado Esperado: O jogo deve mostrar uma mensagem de erro ou impedir a construção da torre, indicando que há recursos insuficientes.
+Observações: Certifique-se de que a mensagem de erro é clara e precisa.
+Comentários: A interface deve refletir corretamente a quantidade de recursos disponíveis.
+
+---
+
+Plano de Teste: Funcionalidade de Atualização de Torres
+Objetivo: Verificar o funcionamento correto da atualização de torres com recursos suficientes e insuficientes, e em locais inadequados.
+
+Suite de Teste: Atualização de Torres
+
+Caso de Teste 1: Atualização de Torre com Recursos Suficientes
+Resumo: Verificar se o jogador pode atualizar uma torre quando possui recursos suficientes.
+Prioridade: Alta
+Status: A ser Executado
+Executor: [Nome do Testador]
+Data de Criação: 2024-09-17
+Pré-condição:
+- O jogador deve ter uma torre construída e recursos suficientes para a atualização.
+Passos:
+1. Inicie o jogo e entre na fase de jogo.
+2. Construa uma torre existente no mapa.
+3. Certifique-se de que possui recursos suficientes para a atualização.
+4. Selecione a torre e escolha a opção de atualização.
+Resultado Esperado: A torre é atualizada com sucesso e suas características melhoradas.
+Observações: Testar diferentes níveis de atualização para verificar a melhoria das características da torre.
+Comentários: Verifique a visibilidade das melhorias e mudanças na torre após a atualização.
+
+Caso de Teste 2: Atualização de Torre com Recursos Insuficientes
+Resumo: Verificar se o jogo impede a atualização de uma torre quando os recursos são insuficientes.
+Prioridade: Alta
+Status: A ser Executado
+Executor: [Nome do Testador]
+Data de Criação: 2024-09-17
+Pré-condição:
+- O jogador deve ter uma torre construída e recursos insuficientes para a atualização.
+Passos:
+1. Inicie o jogo e entre na fase de jogo.
+2. Construa uma torre existente no mapa.
+3. Verifique a quantidade atual de recursos disponíveis.
+4. Tente atualizar a torre sem recursos suficientes.
+Resultado Esperado: O jogo deve mostrar uma mensagem de erro ou impedir a atualização, indicando que os recursos são insuficientes.
+Observações: Certifique-se de que a mensagem de erro é clara e precisa.
+Comentários: Testar diferentes cenários de falta de recursos para garantir a consistência da mensagem de erro.
+
+Caso de Teste 3: Atualização de Torre em Local Inadequado
+Resumo: Verificar se o jogo permite ou impede a atualização da torre em condições especiais.
+Prioridade: Média
+Status: A ser Executado
+Executor: [Nome do Testador]
+Data de Criação: 2024-09-17
+Pré-condição:
+- O jogador deve ter uma torre construída e um cenário especial (como inimigos próximos) em jogo.
+Passos:
+1. Inicie o jogo e entre na fase de jogo.
+2. Construa uma torre existente no mapa.
+3. Tente atualizar a torre enquanto há uma obstrução ou inimigos próximos.
+Resultado Esperado: O jogo deve permitir a atualização se não houver condições especiais que impedem, ou fornecer uma mensagem de erro apropriada se houver.
+Observações: Verificar se a atualização é possível em todas as condições de jogo ou se há bloqueios apropriados.
+Comentários: Avaliar a eficácia das mensagens de erro ou restrições impostas durante a atualização.
+
+---
+
+Plano de Teste: Funcionalidade de Defesa e Interação com Inimigos
+Objetivo: Verificar o comportamento das torres na defesa contra inimigos e a interação com inimigos especiais.
+
+Suite de Teste: Defesa e Interação com Inimigos
+
+Caso de Teste 1: Torre Atacando Inimigos
+Resumo: Verificar se a torre ataca os inimigos corretamente.
+Prioridade: Alta
+Status: A ser Executado
+Executor: [Nome do Test
