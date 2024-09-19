@@ -1,0 +1,59 @@
+Nome do Projeto: Kingdom Rush
+
+Plano de Teste: Funcionalidade de Construção de Torres
+Objetivo: Verificar o funcionamento correto da construção de torres em locais válidos e inválidos, e com recursos suficientes e insuficientes.
+
+Suíte de Teste: Construção de Torres
+
+Caso de Teste 1: Construção de Torre em Local Válido
+Resumo: Verificar se o jogador pode construir uma torre em um local válido no mapa.
+Prioridade: Alta
+Status: A ser Executado
+Executor: [Nome do Testador]
+Data de Criação: 2024-09-17
+Pré-condição:
+- O jogador deve estar na fase de jogo com recursos suficientes.
+- Deve haver um local válido disponível para construção.
+Passos:
+1. Inicie o jogo e entre na fase de jogo.
+2. Identifique um local válido para construção de torre.
+3. Selecione o tipo de torre desejada.
+4. Clique no local válido para construir a torre.
+Resultado Esperado: A torre é construída no local selecionado e aparece no mapa.
+Observações: Verifique se o local selecionado é um local de construção permitido e livre de obstáculos.
+Comentários: A interface de construção deve ser intuitiva e a construção visível.
+
+Caso de Teste 2: Construção de Torre em Local Inválido
+Resumo: Verificar se o jogo impede a construção de uma torre em locais inválidos.
+Prioridade: Alta
+Status: A ser Executado
+Executor: [Nome do Testador]
+Data de Criação: 2024-09-17
+Pré-condição:
+- O jogador deve estar na fase de jogo com recursos suficientes.
+- Deve haver um local inválido disponível para teste (fora do caminho, sobre um obstáculo, etc.).
+Passos:
+1. Inicie o jogo e entre na fase de jogo.
+2. Identifique um local inválido para construção de torre.
+3. Selecione o tipo de torre desejada.
+4. Tente clicar no local inválido para construir a torre.
+Resultado Esperado: O jogo deve mostrar uma mensagem de erro ou impedir a construção da torre, indicando que o local é inválido.
+Observações: Verifique a clareza da mensagem de erro exibida.
+Comentários: Teste diferentes tipos de locais inválidos para garantir a consistência da mensagem.
+
+Caso de Teste 3: Construção de Torre com Recursos Insuficientes
+Resumo: Verificar se o jogo impede a construção de uma torre quando os recursos são insuficientes.
+Prioridade: Alta
+Status: A ser Executado
+Executor: [Nome do Testador]
+Data de Criação: 2024-09-17
+Pré-condição:
+- O jogador deve estar na fase de jogo com recursos insuficientes para a torre selecionada.
+Passos:
+1. Inicie o jogo e entre na fase de jogo.
+2. Verifique a quantidade atual de recursos disponíveis.
+3. Escolha um tipo de torre que requer mais recursos do que você tem.
+4. Tente construir a torre em um local válido.
+Resultado Esperado: O jogo deve mostrar uma mensagem de erro ou impedir a construção da torre, indicando que há recursos insuficientes.
+Observações: Certifique-se de que a mensagem de erro é clara e precisa.
+Comentários: A interface deve refletir corretamente a quantidade de recursos disponíveis.
